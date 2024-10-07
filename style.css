@@ -155,7 +155,7 @@ html{
 }
 .card1 {
   display: flex;
-  flex-wrap: wrap;
+  /* flex-wrap: wrap; */
   justify-content: center;
   align-items: center;
   background-color: white;
@@ -168,7 +168,7 @@ html{
 }
 .card2 {
   display: flex;
-  flex-wrap: wrap;
+  /* flex-wrap: wrap; */
   justify-content:center;
   align-items: center;
   width: 166px;
@@ -182,7 +182,7 @@ html{
 }
 .card3 {
   display: flex;
-  flex-wrap: wrap;
+  /* flex-wrap: wrap; */
   justify-content: center;
   align-items: center;
   background-color: white;
