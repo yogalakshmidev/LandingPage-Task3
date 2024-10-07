@@ -137,7 +137,7 @@ html{
   width: 30px;
 }
 
-.cardDesc{
+.cardDesc {
   /* display: flex;
   flex-direction: column;
   justify-content: center;
@@ -169,7 +169,7 @@ html{
 .card2 {
   display: flex;
   /* flex-wrap: wrap; */
-  justify-content:center;
+  justify-content: center;
   align-items: center;
   width: 166px;
   background-color: white;
@@ -256,139 +256,215 @@ html{
   top: 20px;
   left: 79px;
 }
-.smblackfont24{
+.smblackfont24 {
   font-size: 24px;
   font-weight: bold;
   color: var(--black);
 }
-.ltgreyfont16{
+.ltgreyfont16 {
   font-size: 16px;
   color: var(--lightgrey);
 }
-.cardThings{
+.cardThings {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  gap:16px;
+  gap: 16px;
   padding: 48px;
-  
 }
-.card-Thing{
+.card-Thing {
   width: 370px;
   background-color: white;
   padding: 32px;
   margin: 16px 0;
 }
-.card-Thing > h3, .card-Thing > p{
+.card-Thing > h3,
+.card-Thing > p {
   padding: 16px 0;
 }
 /*************************Discount deals section*******************************/
-.containerDiscount{
-  background: white;  
+.containerDiscount {
+  background: white;
 }
-.blackfont48Bold{
+.blackfont48Bold {
   font-size: 48px;
   color: var(--black);
-  font-family:"volkhov";
+  font-family: "volkhov";
   font-weight: bold;
 }
-.discountDeals{
+.discountDeals {
   display: flex;
-  flex-wrap: wrap; 
+  flex-wrap: wrap;
   padding: 48px;
   justify-content: center;
   align-items: center;
 }
-.contentDiscount{
+.contentDiscount {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
-.contentDiscount > p{
+.contentDiscount > p {
   padding: 16px;
   width: 433px;
   text-align: center;
 }
-.ltblackfont18{
+.ltblackfont18 {
   font-size: 18px;
   font-family: "poppins";
   font-weight: normal;
   color: var(--lightblack);
 }
-.ltblackfont16{
+.ltblackfont16 {
   font-size: 16px;
   font-family: "poppins";
   font-weight: normal;
   color: var(--lightblack);
 }
-.discountCard{
+.discountCard {
   display: flex;
   justify-content: center;
   gap: 24px;
   margin: 16px;
   flex-wrap: wrap;
 }
-.cardDiscount{
+.cardDiscount {
   display: flex;
-  flex-direction: column ;
+  flex-direction: column;
   justify-content: center;
   background-color: white;
   border-radius: 12px;
   flex-shrink: 0;
-
 }
-.upperContent,.bottomContent{
+.upperContent,
+.bottomContent {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
   margin-top: 16px;
-
 }
-.ratings{
+.ratings {
   display: flex;
   justify-content: center;
   text-align: center;
 }
 
-.oldDiscount{
-text-decoration: line-through;
+.oldDiscount {
+  text-decoration: line-through;
 }
-.sbOrangefont16{
-font-size: 16px;
-font-family: "Poppins";
-font-weight: lighter;
-color:#FA7436;
-background:#FFE7DB;
-border: none;
-background-color: none;
+.sbOrangefont16 {
+  font-size: 16px;
+  font-family: "Poppins";
+  font-weight: lighter;
+  color: #fa7436;
+  background: #ffe7db;
+  border: none;
+  background-color: none;
 }
 
-.slidebarBtn{
+  .btnBooknow {
+        visibility: visible;
+        transition: 0.3s ease;
+        position: absolute;
+        bottom: 30px;
+        right: 90px;
+      }
+
+      /* .cardDiscount  .img:hover + .btnBooknow{
+        visibility: hidden;
+      }
+      .btnBooknow:hover {
+        visibility: hidden;
+      } */
+.slidebarBtn {
   display: flex;
   margin: 48px;
   justify-content: center;
-  
 }
 /****************************Footer Section***********************/
-.subscribe{
+.subscribe {
+  margin: 48px;
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
+  align-items: center;
+  border-radius: 8px;
 }
-.elements{
+.elements {
   display: flex;
-   background-color: var(--orange);
-}
-.elements .element1{
   position: relative;
+  /* justify-content: center; */
+  /* align-items: center; */
+  background-color: var(--orange);
+}
+.elements .element1 {
+  position: relative;
+  left: 50px;
   top: 100px;
 }
-.elements .element2{
-  right: 0px;
+.elements .element2 {
+  position: relative;
+  right: -50px;
   align-items: right;
 }
+.subscribeInput {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: white;
+  width: 100%;
+  margin: 32px;
+  border-radius: 8px;
+}
+.contentFooter {
+  display: flex;
+  flex-direction: column;
+}
+.mail {
+  display: flex;
+  padding: 16px;
+}
+.mail input {
+  border: none;
+  padding: 16px;
+}
+.subscribe {
+  background: var(--orange);
+}
+.contentFooter {
+  display: flex;
+  top: 48px;
+  justify-content: center;
+  align-items: center;
+  background: var(--orange);
+}
+.footerLastContent {
+  display: flex;
+  margin: 0 48px;
+  justify-content: space-between;
+}
 
+.containerFooter {
+  display: flex;
+  margin: 48px;
+  line-height: 2;
+  flex: 2;
+  justify-content: space-between;
+}
+.footer-navLinks {
+  display: flex;
+  flex: 1;
+  justify-content: space-evenly;
+}
+.footer-navLinks li{
+  list-style-type: none;
+  line-height: 2;
+}
+.footerLogo i{
+  padding: 8px;
+}
 /*******************Media Query---------------------*/
 /************Mobile Approach***************** */
 @media screen and (max-width: 850px) {
