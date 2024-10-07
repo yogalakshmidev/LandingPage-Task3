@@ -39,6 +39,7 @@
 }
 .heroSection .links a {
   text-decoration: none;
+  color: var(--lightblack);
   padding: 12px;
 }
 
