@@ -1,0 +1,397 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  /* padding:4px; */
+}
+:root {
+  --orange: #fa7436;
+  --lightgrey: #666666;
+  --grey: #999999;
+  --black: #222222;
+  --lightblack: #444444;
+}
+.header {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  gap: 48px;
+}
+.logoicon {
+  display: flex;
+  width: 40%;
+  padding-left: 32px;
+  /* justify-content: ; */
+  align-items: center;
+}
+.logoicon span {
+  font-size: 32px;
+}
+.header nav {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  font-size: 16px;
+  color: var(--lightgrey);
+  gap: 48px;
+}
+.heroSection .links a {
+  text-decoration: none;
+  padding: 12px;
+}
+
+.loginlinks a {
+  color: var(--orange);
+  margin-right: 10px;
+}
+.btnbgOrange {
+  background-color: var(--orange);
+  color: white;
+  border: 1px solid var(--orange);
+  border-radius: 4px;
+  padding: 16px 32px;
+  margin: 10px;
+}
+/**********************Section Padding Overall*******************/
+html{
+  scroll-behavior: smooth;
+}
+/*****************Hero Section****************/
+.heroSection {
+  background: #fefcfb;
+  padding: 48px;
+}
+.heroContent {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  margin: 48px;
+}
+.hero_content1 {
+  display: flex;
+  flex-wrap: wrap;
+  width: 50%;
+  /* position: relative; */
+  /* top: 200px; */
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+.parablackBold {
+  font-size: 64px;
+  font-style: bold;
+  font-family: "Volkhov";
+  color: var(--black);
+}
+.highlightOrange {
+  color: var(--orange);
+}
+.paragrayNormal {
+  color: var(--lightgrey);
+  font-size: 20px;
+}
+.btnbgTransparent {
+  background: transparent;
+  color: var(--orange);
+  border: 1px solid var(--orange);
+  border-radius: 4px;
+  font-size: 18px;
+  font-family: "Poppins";
+  font-style: medium;
+  padding: 16px;
+  margin: 32px 0;
+}
+.hero_content2 {
+  display: flex;
+  flex-direction: column;
+  /* width: 50%; */
+  flex-wrap: wrap;
+  position: relative;
+}
+.hero_content2 .vectorImgLoc {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: -50px;
+}
+.hero_content2 .heroImgLoc {
+  position: relative;
+  left: 130px;
+}
+.cardbgWhite {
+  /* padding: 16px; */
+  /* display: flex;
+  flex-direction: column;
+  flex-wrap: wrap; */
+  gap: 16px;
+}
+.cardbgWhite img {
+  padding: 16px 2px;
+  width: 30px;
+}
+
+.cardDesc{
+  /* display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center; */
+  padding: 16px;
+}
+.cardDesc > h4,
+.card1 > h4 {
+  color: var(--lightblack);
+  font-size: 16px;
+}
+.cardDesc > p {
+  color: var(--lightgrey);
+  font-size: 12px;
+}
+.card1 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  /* width: 118px; */
+  position: absolute;
+  top: 100px;
+  left: 100px;
+  gap: 8px;
+  border-radius: 8px;
+}
+.card2 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content:center;
+  align-items: center;
+  width: 166px;
+  background-color: white;
+  width: 144px;
+  position: absolute;
+  top: 200px;
+  left: 450px;
+  gap: 8px;
+  border-radius: 8px;
+}
+.card3 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  width: 192px;
+  position: absolute;
+  bottom: 130px;
+  left: 100px;
+  gap: 8px;
+  border-radius: 8px;
+}
+
+.exploreSearchbox {
+  background-color: white;
+  display: flex;
+  border-radius: 4px;
+  /* padding: 8px; */
+  margin: 32px;
+  gap: 48px;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: center;
+  box-shadow: 3px 1px 3px 1px rgba(0, 0, 255, 0.2);
+}
+.optionsExplore {
+  padding: 32px;
+  margin: 16px;
+}
+.optionsExplore > h3 {
+  display: inline;
+}
+.optionsExplore > p {
+  padding: 16px 0;
+}
+/*****************************Things Needed Section*******************************/
+.thingsNeed {
+  background: #f7f8fc;
+}
+.thingsContent {
+  display: flex;
+  padding: 48px;
+  justify-content: center;
+  align-items: center;
+}
+.thingsDesc > h2 {
+  text-align: center;
+  font-family: "Volkhov", serif;
+  font-size: 48px;
+}
+.thingsDesc > p {
+  width: 482px;
+  text-align: center;
+  line-height: 2;
+  margin-top: 16px;
+}
+.elementThing {
+  width: 179px;
+  position: relative;
+  /* top:-20px; */
+  left: 50px;
+  align-items: start;
+}
+.flightImgsize {
+  width: 78px;
+  position: absolute;
+  top: 30px;
+  left: 0px;
+}
+.flight2Position {
+  position: absolute;
+  width: 58px;
+  top: 20px;
+  left: 79px;
+}
+.smblackfont24{
+  font-size: 24px;
+  font-weight: bold;
+  color: var(--black);
+}
+.ltgreyfont16{
+  font-size: 16px;
+  color: var(--lightgrey);
+}
+.cardThings{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap:16px;
+  padding: 48px;
+  
+}
+.card-Thing{
+  width: 370px;
+  background-color: white;
+  padding: 32px;
+  margin: 16px 0;
+}
+.card-Thing > h3, .card-Thing > p{
+  padding: 16px 0;
+}
+/*************************Discount deals section*******************************/
+.containerDiscount{
+  background: white;  
+}
+.blackfont48Bold{
+  font-size: 48px;
+  color: var(--black);
+  font-family:"volkhov";
+  font-weight: bold;
+}
+.discountDeals{
+  display: flex;
+  flex-wrap: wrap; 
+  padding: 48px;
+  justify-content: center;
+  align-items: center;
+}
+.contentDiscount{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.contentDiscount > p{
+  padding: 16px;
+  width: 433px;
+  text-align: center;
+}
+.ltblackfont18{
+  font-size: 18px;
+  font-family: "poppins";
+  font-weight: normal;
+  color: var(--lightblack);
+}
+.ltblackfont16{
+  font-size: 16px;
+  font-family: "poppins";
+  font-weight: normal;
+  color: var(--lightblack);
+}
+.discountCard{
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+  margin: 16px;
+  flex-wrap: wrap;
+}
+.cardDiscount{
+  display: flex;
+  flex-direction: column ;
+  justify-content: center;
+  background-color: white;
+  border-radius: 12px;
+  flex-shrink: 0;
+
+}
+.upperContent,.bottomContent{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-top: 16px;
+
+}
+.ratings{
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+
+.oldDiscount{
+text-decoration: line-through;
+}
+.sbOrangefont16{
+font-size: 16px;
+font-family: "Poppins";
+font-weight: lighter;
+color:#FA7436;
+background:#FFE7DB;
+border: none;
+background-color: none;
+}
+
+.slidebarBtn{
+  display: flex;
+  margin: 48px;
+  justify-content: center;
+  
+}
+/****************************Footer Section***********************/
+.subscribe{
+  display: flex;
+  justify-content: center;
+}
+.elements{
+  display: flex;
+   background-color: var(--orange);
+}
+.elements .element1{
+  position: relative;
+  top: 100px;
+}
+.elements .element2{
+  right: 0px;
+  align-items: right;
+}
+
+/*******************Media Query---------------------*/
+/************Mobile Approach***************** */
+@media screen and (max-width: 850px) {
+  .links .nav_links {
+    display: none;
+  }
+}
