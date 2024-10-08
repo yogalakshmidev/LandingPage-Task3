@@ -339,12 +339,13 @@ html {
   border-radius: 12px;
   flex-shrink: 0;
 }
-/* .upperContent,
+.upperContent,
 .bottomContent {
   display: flex;
   justify-content: space-between;
   text-align: center;
-} */
+  margin-top: 10px;
+}
 .ratings {
   display: flex;
   justify-content: center;
@@ -433,7 +434,7 @@ html {
   /* width: 33%; */
   
 }
-.upperContent,.footerContent{
+.upperContentVac,.footerContentVac{
   display: flex;
   justify-content: space-between;
   margin: 12px;
