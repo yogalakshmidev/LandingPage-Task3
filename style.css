@@ -56,7 +56,7 @@
   margin: 10px;
 }
 /**********************Section Padding Overall*******************/
-html{
+html {
   scroll-behavior: smooth;
 }
 /*****************Hero Section****************/
@@ -331,6 +331,7 @@ html{
   flex-wrap: wrap;
 }
 .cardDiscount {
+  position: relative;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -338,13 +339,12 @@ html{
   border-radius: 12px;
   flex-shrink: 0;
 }
-.upperContent,
+/* .upperContent,
 .bottomContent {
   display: flex;
-  flex-wrap: wrap;
   justify-content: space-between;
-  margin-top: 16px;
-}
+  text-align: center;
+} */
 .ratings {
   display: flex;
   justify-content: center;
@@ -363,25 +363,80 @@ html{
   border: none;
   background-color: none;
 }
+.btnBooknow {
+  visibility: hidden;
+  transition: 0.3s ease;
+  position: absolute;
+  bottom: 120px;
+  right: 90px;
+}
+.discountCard :hover + .btnBooknow,
+.btnBooknow:hover {
+  visibility: visible;
+  transition: 0.3s ease;
+  position: absolute;
+  bottom: 120px;
+  right: 90px;
+}
 
-  .btnBooknow {
-        visibility: visible;
-        transition: 0.3s ease;
-        position: absolute;
-        bottom: 30px;
-        right: 90px;
-      }
-
-      /* .cardDiscount  .img:hover + .btnBooknow{
-        visibility: hidden;
-      }
-      .btnBooknow:hover {
-        visibility: hidden;
-      } */
 .slidebarBtn {
   display: flex;
   margin: 48px;
   justify-content: center;
+}
+/*****************************************Vacation Plan Section****************************/
+.vacationPlans {
+  background: #fefcfb;
+  margin: 48px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+.vacationHeading {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  /* position: relative; */
+}
+.vacationImage {
+  display: flex;
+  justify-content: end;
+  top: -250px;
+  left: 0;
+  /* align-items: center; */
+}
+.slidebarBtnVacation {
+  display: flex;
+
+  position: relative;
+  top: 100px;
+  justify-content: flex-end;
+}
+.vacationCard {
+  position: relative;
+  margin-top: 50px;
+  display: flex;
+
+  /* flex-wrap: wrap; */
+  background: white;
+  gap: 12px;
+  border-radius: 8px;
+}
+.vCard {
+  display: flex;
+  justify-content: center;
+  align-items: normal;
+  flex-direction: column;
+  /* width: 33%; */
+  
+}
+.upperContent,.footerContent{
+  display: flex;
+  justify-content: space-between;
+  margin: 12px;
 }
 /****************************Footer Section***********************/
 .subscribe {
@@ -458,11 +513,11 @@ html{
   flex: 1;
   justify-content: space-evenly;
 }
-.footer-navLinks li{
+.footer-navLinks li {
   list-style-type: none;
   line-height: 2;
 }
-.footerLogo i{
+.footerLogo i {
   padding: 8px;
 }
 /*******************Media Query---------------------*/
